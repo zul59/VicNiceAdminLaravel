@@ -3,7 +3,9 @@
 @section('container')
 <!DOCTYPE html>
 <html lang="en">
-
+<h2 style="font-size: 2rem; margin-left: 14rem;">
+        Sistem Informasi Manajemen Risiko IT Telkom Purwokerto
+    </h2>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -48,9 +50,6 @@
   </br>
 
   <div class="container">
-    <h2 style="font-size: 2rem; margin-left: 14rem;">
-        Sistem Informasi Manajemen Risiko IT Telkom Purwokerto
-    </h2>
         <form class="form-horizontal" action="/action_page.php">
           <div class="form-group">
             <label class="control-label col-sm-2" for="email">&nbsp; &nbsp; &nbsp; &nbsp;Unit:</label>
