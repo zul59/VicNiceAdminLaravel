@@ -16,6 +16,7 @@
     const tableResiko = document.getElementById("tableResiko");
     const btnSearch = document.getElementById("btn-search");
     const labelNoData = document.getElementById("label-no-data");
+    const btnExportExcel = document.getElementById("exportExcel");
 
     ddlUnitSelect.addEventListener("change", function () {
         const selectedUnitName = this.value.trim();
@@ -33,14 +34,21 @@
         showTable(newResikoUnitList);
     });
 
-    searchUnitInput.addEventListener("keyup", function (event) {
-        if (event.key === "Enter") {
-            search();
-        }
-    });
+    // searchUnitInput.addEventListener("keyup", function (event) {
+    //     if (event.key === "Enter") {
+    //         search();
+    //     }
+    // });
 
-    btnSearch.addEventListener("click", function () {
-        search();
+    // btnSearch.addEventListener("click", function () {
+    //     search();
+    // });
+
+    btnExportExcel.addEventListener("click", function () {
+        var ddlValue = document.querySelector(
+            "#ddlUnitName > option:checked"
+        ).value;
+        window.open(`/export-risk?unitName=${ddlValue}`, "_blank");
     });
 
     function clearDataTable() {

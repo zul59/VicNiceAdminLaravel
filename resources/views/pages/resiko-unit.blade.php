@@ -31,8 +31,8 @@
       <body>
       <form name=”daftarisi”>
         <select id="ddlUnitName" name=”menu” style=”width:180px”>
-            <option selected disabled="true">List Unit</option>
-            <option value="All">All</option>
+            <!-- <option selected disabled="true">List Unit</option> -->
+            <option value="All" selected>All</option>
             <option value="Sekpim">Sekpim</option>
             <option value="SPM">SPM</option>
             <option value="Humas">Humas</option>
@@ -178,9 +178,9 @@
         </h2>
         <div class="row">
             <h5 style="color: green;">
-                <a class="btn btn-success" href="/export-risk" target="_blank">
+                <button id="exportExcel" class="btn btn-success">
                     Explore Excel
-                </a>
+                </button>
             </h5>
 </div>
 </br>
