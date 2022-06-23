@@ -36,7 +36,6 @@
     .btn-tambah {
       background-color: #a0ce63;
     }
-
     .link-tambah {
       color: white;
     }
@@ -63,7 +62,7 @@ body {
     width: 100%;
     max-width: 100%;
     box-shadow: none;
-    background-color: #57cf56!important;
+    background-color: #222;!important;
     position: fixed;
     height: 60px!important;
     overflow: hidden;
@@ -98,7 +97,7 @@ body {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #aab7cf transparent;
-  background-color: #23d151;
+  background-color: #ebebeb;;
 }
 .sidebarMenuInner{
     margin-top:20px;
@@ -107,7 +106,7 @@ body {
 }
 .sidebarMenuInner li{
   list-style: none;
-  color: #f6f9ff;
+  color: #000000;;
   text-transform: uppercase;
   font-weight: bold;
   padding: 20px;
@@ -117,10 +116,10 @@ body {
 .sidebarMenuInner li span{
   display: block;
   font-size: 14px;
-  color: #f6f9ff;
+  color: #000000;;
 }
 .sidebarMenuInner li a{
-  color: #f6f9ff;
+  color: #000000;;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
@@ -129,7 +128,6 @@ body {
 input[type="checkbox"]:checked ~ #sidebarMenu {
     transform: translateX(0);
 }
-
 input[type=checkbox] {
     transition: all 0.3s;
     box-sizing: border-box;
@@ -216,11 +214,10 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
   <div id="sidebarMenu">
     <ul class="sidebarMenuInner">
-      <li id=btnDashboard >Dashboard</li>
-      <li><a href="risiko-unit">Resiko Unit</a></li>
-      <li><a href="add-component?type=unit">Tambah Unit</a></li>
-      <li><a href="add-data-risiko">Tambah Data Resiko</a></li>
-      <li><span style="cursor: pointer;" id="btnLogout">Logout<span></a></li>
+      <li id=btnDashboard > Dashboard &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;></li>
+      <li><a href="risiko-unit">Resiko Unit &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;></a></li>
+      <li><a href="add-data-risiko">Tambah Data Resiko  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;></a></li>
+      <li><span style="cursor: pointer;" id="btnLogout">Logout &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;><span></a></li>
     </ul>
   </div>
   </aside>

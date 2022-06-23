@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Exports\RiskExport;
 use App\Models\Risk;
-
+use App\Models\User;
 
 class RiskController extends Controller
 {
@@ -38,12 +38,24 @@ class RiskController extends Controller
     /**
      * all an user.
      *
-     * @param
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\View\View
      */
-    public function export()
+    public function export(Request $request)
     {
-        return Excel::download(new RiskExport, 'risks.xlsx');
+        $unitName = $request->query('unitName');
+
+        // dd($unitName);
+        $risks = [];
+        if($unitName == 'All') {
+            $risks = Risk::all();
+        } else {
+            $risks = Risk::where('unit_name', '=', $unitName)->get();
+        }
+        // dd($risks);
+        $export = new RiskExport($risks);
+
+        return Excel::download($export, 'risks.xlsx');
     }
 
     /**

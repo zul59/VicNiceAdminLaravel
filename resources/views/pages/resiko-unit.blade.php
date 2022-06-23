@@ -18,7 +18,7 @@
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index"></a></li>
-          
+
         </ol>
       </nav>
       <!DOCTYPE html>
@@ -30,27 +30,28 @@
 
       <body>
       <form name=”daftarisi”>
-<select name=”menu” style=”width:180px”>
-<option selected>  List Unit  </option>
-<option value=”url link menu 1″>Sekpim</option>
-<option value=”url link menu 2″>SPM</option>
-<option value=”url link menu 2″>Humas</option>
-<option value=”url link menu 1″>BAA</option>
-<option value=”url link menu 2″>Perpustakaan</option>
-<option value=”url link menu 2″>Inovasi</option>
-<option value=”url link menu 1″>Pusat Bahasa</option>
-<option value=”url link menu 2″>LPPM</option>
-<option value=”url link menu 2″>Finance</option>
-<option value=”url link menu 1″>SDM</option>
-<option value=”url link menu 2″>IT Support</option>
-<option value=”url link menu 2″>Logistik</option>
-<option value=”url link menu 1″>PMB</option>
-<option value=”url link menu 1″>Kemahasiswaan</option>
-<option value=”url link menu 2″>CDC</option>
-<option value=”url link menu 1″>BK</option>
-<option value=”url link menu 2″>ITTP</option>
-</select>
-</form>
+        <select id="ddlUnitName" name=”menu” style=”width:180px”>
+            <!-- <option selected disabled="true">List Unit</option> -->
+            <option value="All" selected>All</option>
+            <option value="Sekpim">Sekpim</option>
+            <option value="SPM">SPM</option>
+            <option value="Humas">Humas</option>
+            <option value="BAA">BAA</option>
+            <option value="Perpustakaan">Perpustakaan</option>
+            <option value="Inovasi">Inovasi</option>
+            <option value="Pusat Bahasa">Pusat Bahasa</option>
+            <option value="LPPM">LPPM</option>
+            <option value="Finance">Finance</option>
+            <option value="SDM">SDM</option>
+            <option value="IT Support">IT Support</option>
+            <option value="Logistik">Logistik</option>
+            <option value="PMB">PMB</option>
+            <option value="Kemahasiswaan">Kemahasiswaan</option>
+            <option value="CDC">CDC</option>
+            <option value="BK">BK</option>
+            <option value="ITTP">ITTP</option>
+        </select>
+    </form>
 </br>
         <table id="tableResiko" style="display: block; overflow-x: scroll; white-space: nowrap; border: 1">
           <colgroup>
@@ -177,13 +178,13 @@
         </h2>
         <div class="row">
             <h5 style="color: green;">
-                <a class="btn btn-success" href="/export-risk" target="_blank">
+                <button id="exportExcel" class="btn btn-success">
                     Explore Excel
-                </a>
+                </button>
             </h5>
 </div>
 </br>
- 
+
 
       </html>
     </div><!-- End Page Title -->

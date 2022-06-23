@@ -32,7 +32,7 @@
 <div class="d-flex justify-content-center py-4">
 <a href="index" class="logo d-flex align-items-center w-auto">
 <img src="assets/img/logo.png" alt="">
-<span class="d-none d-lg-block">Silahkan Login</span>
+<h5 class="card-title text-center pb-0 fs-4">Silahkan Login</h5>
 </a>
 </div><!-- End Logo -->
 <div class="card mb-3">

@@ -51,7 +51,7 @@
 
   <div class="container">
         <form class="form-horizontal" action="/action_page.php">
-          <div class="form-group">
+        <div class="form-group">
             <label class="control-label col-sm-2" for="email">&nbsp; &nbsp; &nbsp; &nbsp;Unit:</label>
             <div class="col-sm-5">
               <select name="unit" id="unit" class="form-control"></select>

@@ -3,6 +3,7 @@
 namespace App\Exports;
 
 use Illuminate\Contracts\View\View;
+use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\FromView;
 
 use App\Models\Risk;
@@ -11,18 +12,15 @@ use App\Models\Risk;
 // class RiskExport implements FromCollection
 class RiskExport implements FromView
 {
-    // /**
-    // * @return \Illuminate\Support\Collection
-    // */
-    // public function collection()
-    // {
-    //     return Risk::all();
-    // }
+    public function __construct($risks)
+    {
+        $this->risks = $risks;
+    }
 
     public function view(): View
     {
         return view('excels.risks', [
-            'risks' => Risk::all()
+            'risks' => $this->risks
         ]);
     }
 }
