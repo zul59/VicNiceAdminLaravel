@@ -89,6 +89,7 @@ class UserController extends Controller
                     'email' => $resUser->email,
                     'name' => $resUser->name,
                     'role' => $resUser->role,
+                    'unit_id' => $resUser->unit_id
                 ]
             ], 200);
         } catch (\Illuminate\Database\QueryException $exception) {

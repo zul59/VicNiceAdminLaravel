@@ -104,6 +104,9 @@
             })
             const result = await response.json();
 
+            const dataSession = JSON.parse(sessionStorage.getItem('session'))
+            const sessionUserUnitId = dataSession.unitId;
+
             units = result.data.units;
             riskCategories = result.data.riskCategories;
             sourceOfRisks = result.data.sourceOfRisks;
@@ -118,6 +121,11 @@
 
             if (unit) {
                 const unitSelectedIndex = units.findIndex(u => u.unit_name === unit.trim());
+                if (unitSelectedIndex != -1) {
+                    unitSelect.value = `unit-${unitSelectedIndex}`;
+                }
+            } else {
+                const unitSelectedIndex = units.findIndex(u => u.id === sessionUserUnitId);
                 if (unitSelectedIndex != -1) {
                     unitSelect.value = `unit-${unitSelectedIndex}`;
                 }
