@@ -1,5 +1,5 @@
 @extends('layouts.main')
-<img src="assets/img/pink.png" alt="Image" height="25%" width="120%" repeat-x top left;> 
+<img src="assets/img/green.png" alt="Image" height="25%" width="120%" repeat-x top left;> 
 @section('container')
 <!DOCTYPE html>
 <html lang="en">
@@ -12,21 +12,15 @@
   <span style="font-size: 15pt;"> Selamat Datang User ! </span> </br> </br>
   <span style="font-size: 12pt;"> Gunakan Menu Yang Tersedia Untuk Mengakses Fitur Website !</span> </br> </br>
   <p style="font-size: 12pt;" align="justify" >
-  Risiko adalah suatu ketidakpastian dimasa yang akan datang tentang kerugian yang harus dipikul oleh
-organisasi. Risiko mengandung tiga unsur pembentukan risiko, yaitu : kemungkinan kejadian
-atau peristiwa, dampak atau konsekuensi (jika terjadi,risiko akan membawa akibat atau konsekuensi),kemungkinan kejadian (risiko masih berupa
-kemungkinan atau diukur dalam bentuk probabilitas. Pada suatu instansi pendidikan, risiko bisa timbul dikarenakan oleh pihak eksternal dan pihak internal.
-Risiko yang berasal dari pihak eksternal dan internal. Risiko yang berasal dari pihak eksternal diantaranya
-diberlakukannya peraturan perundang-undangan baru, perkembangan teknologi, bencana alam dan gangguan keamanan. Sementara itu risiko yang
-bersumber dari pihak internal diantaranya adanya keterbatasan dana operasional, sumber daya manusia. yang tidak kompeten, peralatan yang tidak memadai,
-kebijaan prosedur yang tidak jelas, suasana kerja yang tidak kondusif, adanya unsur sabotase dari pegawai dan sebagainya. Dengan adanya sistem informasi manajemen risiko ini 
-diharapkan user bisa terbantu mengenai adanya risiko yang ada di IT Telkom Purwokerto.</p> </br>
+  Bapak/ibu yang kami hormati, Perkenankan kami, dari unit IT Support dalam rangka untuk meningkatkan kualitas pelayanan akademik di lingkungan IT Telkom Purwokerto
+  kepada mahasiswa, stakeholder dan unit yang terkait, maka diharap mengisi form manajemen risiko jika ada kemungkinan risiko yang bisa menggangu proses akademik. Kami sangat mengharapkan
+respon yang sebenarnya berdasarkan interaksi yang Bapak/Ibu alami dalam unit terkait.</p> </br>
 <!DOCTYPE html>
 <style>
 button{
 font-family: sans-serif;
 font-size: 15px;
-background: #ff26a0;
+background:  	#228B22;
 color: white;
 border: white 3px solid;
 border-radius: 5px;

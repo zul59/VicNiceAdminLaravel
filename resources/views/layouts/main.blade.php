@@ -28,6 +28,8 @@
   <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"  />
+  
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -62,7 +64,7 @@ body {
     width: 100%;
     max-width: 100%;
     box-shadow: none;
-    background-color: #222;!important;
+    background-color: #57cf56!important;
     position: fixed;
     height: 60px!important;
     overflow: hidden;
@@ -97,7 +99,7 @@ body {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #aab7cf transparent;
-  background-color: #ebebeb;;
+  background-color: #198754;
 }
 .sidebarMenuInner{
     margin-top:20px;
@@ -106,7 +108,7 @@ body {
 }
 .sidebarMenuInner li{
   list-style: none;
-  color: #000000;;
+  color: #f6f9ff;
   text-transform: uppercase;
   font-weight: bold;
   padding: 20px;
@@ -114,12 +116,11 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
 .sidebarMenuInner li span{
-  display: block;
   font-size: 14px;
-  color: #000000;;
+  color: #f6f9ff;
 }
 .sidebarMenuInner li a{
-  color: #000000;;
+  color: #f6f9ff;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
@@ -214,11 +215,23 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
   <div id="sidebarMenu">
     <ul class="sidebarMenuInner">
-      <li id=btnDashboard > Dashboard &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;></li>
-      <li><a href="risiko-unit">Resiko Unit &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;></a></li>
-      <li><a href="add-data-risiko">Tambah Data Resiko  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;></a></li>
-      <li><span style="cursor: pointer;" id="btnLogout">Logout &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;><span></a></li>
-    </ul>
+      <li id=btnDashboard >
+        <a class="icon" style="color: white; margin-right: 1.5rem;"><i class="fas fa-lg fa-dice-d6" style="transform: scale(2);" aria-hidden="true"></i></a>
+        Dashboard
+      </li>
+        <li>
+            <a class="icon" style="color: white; margin-right: 1.5rem;"><i class="fas fa-align-justify" style="transform: scale(2);" aria-hidden="true"></i></a>
+            <a href="risiko-unit">Resiko Unit</a>
+        </li>
+        <li>
+            <a class="icon" style="color: white; margin-right: 1.5rem;"><i class="fas fa-plus" style="transform: scale(2);" aria-hidden="true"></i></a>
+            <a href="add-data-risiko">Tambah Data Risiko</a>
+        </li>
+        <li>
+            <a class="icon" style="color: white; margin-right: 1.5rem;"><i class="fas fa-plus" style="transform: scale(2);" aria-hidden="true"></i></a>
+            <span style="cursor: pointer;" id="btnLogout">Logout<span>
+
+
   </div>
   </aside>
   <!-- End Sidebar-->

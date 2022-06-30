@@ -30,7 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
               userId: result.data.user_id,
               username: result.data.username,
               name: result.data.name,
-              role: result.data.role
+              role: result.data.role,
+              unitId: result.data.unit_id
           }
           sessionStorage.setItem("session", JSON.stringify(sessionData));
           alert('Login Success');

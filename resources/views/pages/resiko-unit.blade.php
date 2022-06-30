@@ -27,6 +27,10 @@
       <head>
         <title>Tabel di HTML</title>
       </head>
+      <html lang="en">
+<h2 style="font-size: 2rem; margin-left: 14rem;">
+        Sistem Informasi Manajemen Risiko IT Telkom Purwokerto
+    </h2>
 
       <body>
       <form name=”daftarisi”>
