@@ -29,7 +29,10 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"  />
+<<<<<<< HEAD
   
+=======
+>>>>>>> c3c4c90e1e216752cf8fb985293817e67a81c5bc
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -216,22 +219,25 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   <div id="sidebarMenu">
     <ul class="sidebarMenuInner">
       <li id=btnDashboard >
-        <a class="icon" style="color: white; margin-right: 1.5rem;"><i class="fas fa-lg fa-dice-d6" style="transform: scale(2);" aria-hidden="true"></i></a>
+        <a class="icon" style="color: grey; margin-right: 1.5rem;"><i class="fas fa-lg fa-dice-d6" style="transform: scale(2);" aria-hidden="true"></i></a>
         Dashboard
       </li>
         <li>
-            <a class="icon" style="color: white; margin-right: 1.5rem;"><i class="fas fa-align-justify" style="transform: scale(2);" aria-hidden="true"></i></a>
+            <a class="icon" style="color: grey; margin-right: 1.5rem;"><i class="fas fa-align-justify" style="transform: scale(2);" aria-hidden="true"></i></a>
             <a href="risiko-unit">Resiko Unit</a>
         </li>
         <li>
-            <a class="icon" style="color: white; margin-right: 1.5rem;"><i class="fas fa-plus" style="transform: scale(2);" aria-hidden="true"></i></a>
-            <a href="add-data-risiko">Tambah Data Risiko</a>
+            <a class="icon" style="color: grey; margin-right: 1.5rem;"><i class="fas fa-plus" style="transform: scale(2);" aria-hidden="true"></i></a>
+            <a href="add-component?type=unit">Tambah Unit</a>
         </li>
         <li>
-            <a class="icon" style="color: white; margin-right: 1.5rem;"><i class="fas fa-plus" style="transform: scale(2);" aria-hidden="true"></i></a>
+            <a class="icon" style="color: grey; margin-right: 1.5rem;"><i class="fas fa-plus" style="transform: scale(2);" aria-hidden="true"></i></a>
+            <a href="add-data-risiko">Tambah Data Resiko</a>
+        </li>
+        <li>
             <span style="cursor: pointer;" id="btnLogout">Logout<span>
-
-
+        </li>
+    </ul>
   </div>
   </aside>
   <!-- End Sidebar-->
