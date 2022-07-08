@@ -21,6 +21,7 @@ class UserController extends Controller
         $name = $request->input('name');
         $email = $request->input('email');
         $password = $request->input('password');
+        $unitId = $request->input('unitId');
 
         $resCount = User::where('username', '=', $username)->where('email', '=', $email)->count();
 
@@ -36,7 +37,8 @@ class UserController extends Controller
                 'username' => $username,
                 'email' => $email,
                 'name' => $name,
-                'password' => $password
+                'password' => $password,
+                'unit_id' => $unitId,
             ]);
 
             return response()->json([
