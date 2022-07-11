@@ -31,7 +31,8 @@ async function login(event) {
             username: result.data.username,
             name: result.data.name,
             role: result.data.role,
-            unitId: result.data.unit_id
+            unitId: result.data.unit_id,
+            unit: result.data.unit,
         }
         sessionStorage.setItem("session", JSON.stringify(sessionData));
         alert('Login Success');
