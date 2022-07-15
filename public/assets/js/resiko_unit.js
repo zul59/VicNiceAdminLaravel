@@ -130,9 +130,16 @@
             },
         ];
 
-        const listAuthorizedFilter = listOfDDL.filter(
-            (x) => x.key == sessionData.unit.unit_name
-        );
+        let listAuthorizedFilter = [];
+
+        if (sessionData.role == 2) {
+            // Admin
+            listAuthorizedFilter = listOfDDL;
+        } else {
+            listAuthorizedFilter = listOfDDL.filter(
+                (x) => x.key == sessionData.unit.unit_name
+            );
+        }
 
         const ddlUnitNameEl = document.getElementById("ddlUnitName");
         listAuthorizedFilter.forEach((x) => {
