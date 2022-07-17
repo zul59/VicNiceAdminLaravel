@@ -67,6 +67,13 @@
                         <div class="invalid-feedback">Please enter your password!</div>
                       </div>
                       <div class="col-12">
+                        <label for="yourUnit">Unit</label>
+                        <select name="unit" id="yourUnit" class="form-control">
+
+                        </select>
+                        <div class="invalid-feedback">Please enter your unit!</div>
+                      </div>
+                      <div class="col-12">
                         <div class="form-check">
                           <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required>
                           <label class="form-check-label" for="acceptTerms">Saya setuju dan menerima syarat dan ketentuan </a>

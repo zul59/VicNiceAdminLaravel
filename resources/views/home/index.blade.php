@@ -45,7 +45,7 @@
         th,
         td {
           text-align: left;
-          padding: 16px;
+          padding: 10px;
         }
 
         tr:nth-child(even) {

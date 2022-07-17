@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Unit;
 
 class UserController extends Controller
 {
@@ -21,6 +22,7 @@ class UserController extends Controller
         $name = $request->input('name');
         $email = $request->input('email');
         $password = $request->input('password');
+        $unitId = $request->input('unitId');
 
         $resCount = User::where('username', '=', $username)->where('email', '=', $email)->count();
 
@@ -36,7 +38,8 @@ class UserController extends Controller
                 'username' => $username,
                 'email' => $email,
                 'name' => $name,
-                'password' => $password
+                'password' => $password,
+                'unit_id' => $unitId,
             ]);
 
             return response()->json([
@@ -80,6 +83,8 @@ class UserController extends Controller
                 ], 400);
             }
 
+            $unitData = Unit::where('id', '=', $resUser->unit_id)->first();
+
             return response()->json([
                 'status' => 200,
                 'message' => 'Login success',
@@ -89,7 +94,8 @@ class UserController extends Controller
                     'email' => $resUser->email,
                     'name' => $resUser->name,
                     'role' => $resUser->role,
-                    'unit_id' => $resUser->unit_id
+                    'unit_id' => $resUser->unit_id,
+                    'unit' => $unitData,
                 ]
             ], 200);
         } catch (\Illuminate\Database\QueryException $exception) {

@@ -40,11 +40,9 @@ opacity:0.9;
 </html>
 <div class="col-lg-12">
 </div>
-<div class="container" itemprop="description"  id="unitContainer">
-</div>
+
   <!--nama file link.html-->
-  <div class="d-flex align-items-left flex-column" id="unitContainer">
-  </div>
+ 
   <!-- ======= Footer ======= -->
   <div class="credits">
   </div>

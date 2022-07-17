@@ -36,7 +36,7 @@
       <form name=”daftarisi”>
         <select id="ddlUnitName" name=”menu” style=”width:180px”>
             <!-- <option selected disabled="true">List Unit</option> -->
-            <option value="All" selected>All</option>
+            <!-- <option value="All" selected>All</option>
             <option value="Sekpim">Sekpim</option>
             <option value="SPM">SPM</option>
             <option value="Humas">Humas</option>
@@ -53,7 +53,7 @@
             <option value="Kemahasiswaan">Kemahasiswaan</option>
             <option value="CDC">CDC</option>
             <option value="BK">BK</option>
-            <option value="ITTP">ITTP</option>
+            <option value="ITTP">ITTP</option> -->
         </select>
     </form>
 </br>

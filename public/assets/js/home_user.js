@@ -15,14 +15,14 @@
 
             const units = result.data.units;
 
-            units.forEach((unit, index) => {
-                const aLink = document.createElement('a');
-                aLink.classList.add("link_selection");
+            // units.forEach((unit, index) => {
+            //     const aLink = document.createElement('a');
+            //     aLink.classList.add("link_selection");
 
-                aLink.innerHTML = `${index+1}. ${unit.unit_name} <br /> <br />`;
+            //     aLink.innerHTML = `${index+1}. ${unit.unit_name} <br /> <br />`;
 
-                unitContainer.append(aLink);
-            })
+            //     unitContainer.append(aLink);
+            // })
 
             const linkButtons = document.querySelectorAll('.link_selection');
 

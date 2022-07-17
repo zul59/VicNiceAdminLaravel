@@ -1,8 +1,9 @@
 (async function () {
     const session = sessionStorage.getItem("session");
+    let sessionData;
 
     if (session != null) {
-        const sessionData = JSON.parse(sessionStorage.getItem("session"));
+        sessionData = JSON.parse(sessionStorage.getItem("session"));
     }
 
     const tableHeadUserAction = document.getElementById("thUserAction");
@@ -50,6 +51,108 @@
         ).value;
         window.open(`/export-risk?unitName=${ddlValue}`, "_blank");
     });
+
+    await initFilterData(sessionData);
+
+    function initFilterData(sessionData) {
+        const listOfDDL = [
+            {
+                key: "All",
+                data: `<option value="All" selected>All</option>`,
+            },
+            {
+                key: "Sekpim",
+                data: `<option value="Sekpim">Sekpim</option>`,
+            },
+            {
+                key: "SPM",
+                data: `<option value="SPM">SPM</option>`,
+            },
+            {
+                key: "Humas",
+                data: `<option value="Humas">Humas</option>`,
+            },
+            {
+                key: "BAA",
+                data: `<option value="BAA">BAA</option>`,
+            },
+            {
+                key: "Perpustakaan",
+                data: `<option value="Perpustakaan">Perpustakaan</option>`,
+            },
+            {
+                key: "Inovasi",
+                data: `<option value="Inovasi">Inovasi</option>`,
+            },
+            {
+                key: "Pusat Bahasa",
+                data: `<option value="Pusat Bahasa">Pusat Bahasa</option>`,
+            },
+            {
+                key: "LPPM",
+                data: `<option value="LPPM">LPPM</option>`,
+            },
+            {
+                key: "Finance",
+                data: `<option value="Finance">Finance</option>`,
+            },
+            {
+                key: "SDM",
+                data: `<option value="SDM">SDM</option>`,
+            },
+            {
+                key: "IT Support",
+                data: `<option value="IT Support">IT Support</option>`,
+            },
+            {
+                key: "Logistik",
+                data: `<option value="Logistik">Logistik</option>`,
+            },
+            {
+                key: "PMB",
+                data: `<option value="PMB">PMB</option>`,
+            },
+            {
+                key: "Kemahasiswaan",
+                data: `<option value="Kemahasiswaan">Kemahasiswaan</option>`,
+            },
+            {
+                key: "CDC",
+                data: `<option value="CDC">CDC</option>`,
+            },
+            {
+                key: "BK",
+                data: `<option value="BK">BK</option>`,
+            },
+            {
+                key: "ITTP",
+                data: `<option value="ITTP">ITTP</option>`,
+            },
+        ];
+
+        let listAuthorizedFilter = [];
+
+        if (sessionData.role == 2) {
+            // Admin
+            listAuthorizedFilter = listOfDDL;
+        } else {
+            listAuthorizedFilter = listOfDDL.filter(
+                (x) => x.key == sessionData.unit.unit_name
+            );
+        }
+
+        const ddlUnitNameEl = document.getElementById("ddlUnitName");
+        listAuthorizedFilter.forEach((x) => {
+            ddlUnitNameEl.insertAdjacentHTML("beforeend", x.data);
+        });
+
+        triggerChange(ddlUnitNameEl);
+    }
+
+    function triggerChange(element) {
+        let changeEvent = new Event("change");
+        element.dispatchEvent(changeEvent);
+    }
 
     function clearDataTable() {
         document.getElementById("rows").innerHTML = "";
