@@ -54,7 +54,7 @@
         <div class="form-group">
             <label class="control-label col-sm-2" for="email">&nbsp; &nbsp; &nbsp; &nbsp;Unit:</label>
             <div class="col-sm-5">
-              <select name="unit" id="unit" class="form-control" disabled> </select>
+              <select name="unit" id="unit" class="form-control" > </select>
             </div>
           </div>
         <label class="control-label col-sm-2" for="pwd">Risk Identification</label>
